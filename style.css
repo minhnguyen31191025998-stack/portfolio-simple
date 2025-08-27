@@ -1,0 +1,359 @@
+reset css
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+.header{
+    border-bottom:1px solid grey;
+}
+.header .header-container{
+    display: flex;
+    /* chỉ áp dụng cho display flex */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header .header-title {
+    color:#15803d}
+
+.header .header-left ul {
+    display:flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.header .header-left li:hover {
+    Color: #15803d;
+    
+}
+.header .header-left li {
+    position: relative;
+    /* thằng cha */
+}
+.header .header-left li::after{
+    content: "";
+    width: 0;
+    transition: all 0.3s ease;
+    background-color: green;
+    height: 1px;
+    position: absolute;
+    /* vị trí thằng con */
+    left: 0;
+    bottom: -5px;
+
+}
+
+.header .header-left li:hover::after{
+    width: 100%;
+}
+
+.banner {
+    padding: 80px 32px;
+    background: linear-gradient(135deg, #ffffff 10%, #f0fdf4 100%);
+    text-align: center;
+    /* align-items: center; */
+}
+.banner .banner-title {
+    color:#15803d;
+    font-size: 56px;
+    text-align: center;
+    margin: 12px 0;
+    
+}
+
+.banner .banner-intro {
+    color: #374151;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+.banner .banner-description {
+    color: #374151;
+    text-align: center;
+    margin: 0 auto 40px;
+    max-width: 600px;
+
+}
+.banner .banner-button {
+    display: inline block;
+    background-color: #15803d;
+    border-radius: 8px;
+    padding: 16px 24px;
+    text-align: center;
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+/* transition để ở trong button, ko thêm trong hover :))) */
+.banner .banner-button:hover {
+    background-color: #84cc16;
+    transform:translateY(-5px);
+}
+
+.intro {
+    margin: 40px;
+    padding: 24px 32px;
+}
+.intro .intro-top {
+    display:flex;
+    justify-content: center;
+}
+
+.intro .intro-title {
+    color: #15803d;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+}
+
+.intro .intro-title::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #84cc16;
+    left:50%;
+    bottom: -5px;
+    position:absolute;
+    transform: translate(-50%);
+}
+
+.intro .intro-bot {
+display: flex;
+justify-content:space-between;
+gap: 36px;
+padding: 16px 40px;
+}
+
+/* .intro .circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #15803d;
+    border-radius:50%;
+    align-items: center;
+    position:relative;
+}
+.circle .img-avt{
+border-radius: 50%;
+size: 40px 40px;
+position:absolute;
+left:50%;
+bottom: -25%;
+} */
+ .intro .circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #15803d;
+    border-radius:50%;
+    /* Thêm các thuộc tính Flexbox sau */
+    display: flex; /* Bật Flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.circle .img-avt {
+    border-radius: 50%;
+    /* Xóa các thuộc tính position và left/bottom vì Flexbox sẽ lo việc căn chỉnh */
+    /* Kích thước ảnh */
+    width: 120px;
+    height: 120px;
+}
+.intro .intro-right {
+    max-width: 400;
+    box-shadow: border-box;
+}
+
+.skill .skill-title {
+    color: #15803d;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+}
+
+.skill .skill-title::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #84cc16;
+    left:50%;
+    bottom: -5px;
+    position:absolute;
+    transform: translate(-50%);
+}
+
+.skill {
+    padding: 24px 32px;
+    background: linear-gradient(135deg, #ffffff 10%, #f0fdf4 100%);
+}
+
+.all-skill{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+.one-skill {
+    background-color: white;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.one-skill:hover {
+     transform: translateY(-5px);
+    box-shadow: 0 5px 30px rgba(21, 128, 61, 0.1);
+}
+.one-skill .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #15803d;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+h3 {
+    color:#15803d
+}
+.all-project {
+     display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 40px 0;
+}
+.one-project{
+    background: #f0fdf4;
+    border-radius: 12px;
+    /* text-align: center; */
+    padding: 16px 16px;
+    transition: all 0.3s ease;
+}
+
+.one-project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 30px rgba(21, 128, 61, 0.1);
+}
+.one-project .img-project{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project .project-title {
+    color: #15803d;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+}
+
+.project .project-title::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #84cc16;
+    left:50%;
+    bottom: -5px;
+    position:absolute;
+    transform: translate(-50%);}
+
+.project-buttons{
+    display: flex;
+    gap: 12px;
+}
+.button-demo {
+    background-color: #15803d;
+    border-radius: 8px;
+    padding: 16px 24px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.button-demo:hover {
+    background-color: #84cc16;
+}
+
+.button-github {
+    color:#15803d;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 16px 24px;
+    border: #15803d solid;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.button-github:hover {
+    background-color: #15803d;
+    color:#ffffff;
+}
+
+p {
+    margin-bottom: 12px;
+}
+.footer {
+    background-color: #374151;
+    padding: 40px;
+    text-align: center;
+
+}
+.social-link {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    padding: 0 0 12px;
+
+}
+.footer-icon {
+width: 40px;
+    height: 40px;
+    background-color: #15803d;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 16px;
+    Border: none;
+    transition: all 0.3s ease;
+
+}
+
+.footer-content {
+    color: white;
+    size: 16px ;
+    text-align: center;
+}
+
+.footer-icon:hover {
+    background-color: #84cc16;
+    transform:translateY(-5px);
+}
+
+.form .form-title {
+    color: #15803d;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+}
+
+.form .form-title::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #84cc16;
+    left:50%;
+    bottom: -5px;
+    position:absolute;
+    transform: translate(-50%);}
