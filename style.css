@@ -14,6 +14,8 @@ reset css
 }
 .header{
     border-bottom:1px solid grey;
+    z-index: 100px;
+    background-color: white;
 }
 .header .header-container{
     display: flex;
@@ -357,3 +359,54 @@ width: 40px;
     bottom: -5px;
     position:absolute;
     transform: translate(-50%);}
+
+.contact {
+         background-color: #f0fdf4;
+    }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0fdf4;
+    padding: 24px;
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-group {
+    display: flex;
+    flex-direction:column;
+    gap:4px;
+}
+.form-group label {
+    color:#15803d;
+    size: 12px;
+    font-weight: 400;
+}
+.form-group input, textarea {
+    border-radius: 12px;
+    border: solid 1px grey;
+    padding: 16px;
+    background-color: #f0fdf4;
+}
+
+.form-group textarea {
+    border-radius: 12px;
+    border: solid 1px grey;
+    padding: 12px;
+    background-color: #f0fdf4;
+    margin: 0 0 12px;
+}
+
+.form-button {
+background-color: #15803d;
+    border-radius: 8px;
+    padding: 16px 24px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.form-button:hover {
+    background-color: #84cc16;
+   transform:translateY(-3px);
+}
