@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./responsive/desktop.css" />
+    <link rel="stylesheet" href="./responsive/mobile.css" />
+        <link rel="stylesheet" href="./responsive/tablet.css" />
     <!-- nhúng font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,11 +22,10 @@
         <div>
           <nav class="header-left">
             <ul>
-              <li>Trang chủ</li>
-              <li>Giới thiệu</li>
-              <li>Kỹ năng</li>
-              <li>Dự án</li>
-              <li><a href="#contact">Liên hệ</a></li>
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#about">Giới thiệu</a></li>
+              <li><a href="#skills">Kỹ năng</a></li>
+              <li><a href="#projects">Dự án</a></li>
             </ul>
           </nav>
         </div>
@@ -49,7 +50,7 @@
       </section>
       <!-- End banner -->
       <!-- Start intro -->
-      <section class="intro container">
+      <section class="intro container" id="about">
         <div>
           <div class="intro-top">
             <h3 class="intro-title">Giới thiệu</h3>
@@ -85,7 +86,7 @@
       </section>
       <!-- End intro -->
       <!-- Start skill -->
-      <section class="skill container">
+      <section class="skill container" id="skills">
         <h3 class="skill-title">Kỹ năng</h3>
         <div class="all-skill">
           <div class="one-skill">
@@ -112,7 +113,7 @@
       </section>
       <!-- End skill      -->
       <!-- Start project -->
-      <section class="project container">
+      <section class="project container" id="projects">
         <h3 class="project-title">Dự án</h3>
         <div class="all-project">
           <div class="one-project">
@@ -170,8 +171,8 @@
       <!-- End project  -->
       <!-- Start contact -->
       <section class="contact container" id="contact">
-        <div class="contact-containẻ container"></div>
-        <h3>Liên hệ</h3>
+        <div class="contact-container container">
+        <h3 class="contact-title">Liên hệ</h3>
         <form class="contact-form">
 <div class="form-group">
 <label for="name">Họ và tên</label>
@@ -191,7 +192,7 @@
 </div>
 <button class="form-button">Gửi tin nhắn</button>
         </form>
-
+</div>
       </section>
       <!-- End contact -->
     </main>
