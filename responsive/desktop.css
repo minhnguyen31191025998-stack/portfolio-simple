@@ -308,6 +308,7 @@ h3 {
     font-weight: 600;
     transition: all 0.3s ease;
 }
+
 .button-github:hover {
     background-color: #15803d;
     color:#ffffff;

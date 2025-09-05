@@ -1,2 +1,75 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+nav {
+    display: none;
 }
+.header {
+    border-bottom: 1px solid grey;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(24px);
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+.banner {
+    padding: 32px 32px;
+}
+.banner .banner-title {
+    color: #15803d;
+    font-size: 32px;
+    text-align: center;
+}
+
+.intro .intro-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 12px;
+}
+.intro {
+    margin: 0;
+    padding: 0 auto;
+}
+
+.intro .intro-right {
+    max-width: 320px;
+    box-shadow: border-box;
+}
+.intro .intro-left {
+    max-width: 320px;
+    display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.skill {
+    padding: 0;
+    background: linear-gradient(135deg, #ffffff 10%, #f0fdf4 100%);
+}
+
+.all-skill {
+    display: grid;
+    gap: 12px;
+    padding: 12px 12px;
+}
+
+.one-skill {
+    background-color: white;
+    padding: 12px 12px;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.all-project {
+    display: grid;
+    gap: 12px;
+    padding: 12px 12px;
+}
+
+}
+
