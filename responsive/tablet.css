@@ -10,6 +10,13 @@
     margin: 0 auto;
     padding: 12px 12px;
 }
+.banner .banner-title {
+    font-size: 32px;
+}
+
+.intro-right p {
+    text-align: center;
+}
 .intro .intro-bot {
     display: flex;
     flex-direction: column;
@@ -22,6 +29,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(24px);
 }
 
 }

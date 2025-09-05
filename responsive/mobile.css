@@ -2,14 +2,7 @@
 nav {
     display: none;
 }
-.header {
-    border-bottom: 1px solid grey;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(24px);
-}
+
 .container {
     margin: 0 auto;
     width: 100%;
@@ -22,7 +15,9 @@ nav {
     font-size: 32px;
     text-align: center;
 }
-
+.intro-right p {
+    text-align: center;
+}
 .intro .intro-bot {
     display: flex;
     flex-direction: column;
