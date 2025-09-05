@@ -1,0 +1,27 @@
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+.header-left {
+    display: none;
+}
+    .container {
+    margin: 0 auto;
+    width: 95%;
+}
+    .intro {
+    margin: 0 auto;
+    padding: 12px 12px;
+}
+.intro .intro-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 12px;
+}
+.intro .intro-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+}
